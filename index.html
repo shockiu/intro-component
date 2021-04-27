@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="main-login">
+    <div class="login-description">
+      <h1 class="login-description__title">Learn to code by watching others</h1>
+      <small class="login-description__description">
+        See how experienced developers resolve problems in real-time.
+        Watching scripted tutorials is great, but understanding how developers
+        think is invalubale
+      </small>
+    </div>
+    <form class="form-login" id="form-offer">
+      <div class="form-login__offer">
+        <a href="" class="button-link button__secondary" target="_blank"><!-- Molecula -->
+          <span class="button-link__bold">Try it free 7 days</span> then $20/mo. thereafter
+        </a>
+      </div>
+      <div class="form-login__group">
+        <div class="form-login__item">
+          <input class="form-login__input" placeholder="Firts Name" name="firstName" type="text">
+          <i class="fas fa-exclamation-circle icon-relative"></i>
+          <span class="form-login__alert-message">Invalid name</span>
+        </div>
+        <div class="form-login__item">
+          <input class="form-login__input" placeholder="Last Name" name="lastName" type="text">
+          <i class="fas fa-exclamation-circle icon-relative"></i>
+          <span class="form-login__alert-message">Invalid last name</span>
+        </div>
+        <div class="form-login__item">
+          <input class="form-login__input" placeholder="Email" name="email" type="email">
+          <i class="fas fa-exclamation-circle icon-relative"></i>
+          <span class="form-login__alert-message">Invalid email</span>
+        </div>
+        <div class="form-login__item">
+          <input class="form-login__input" placeholder="Password"  name="password" type="password">
+          <i class="fas fa-exclamation-circle icon-relative"></i>
+          <span class="form-login__alert-message">Password must be at least 8 chracters</span>
+        </div>
+        <div class="form-login__offer">
+          <a href="" id="sumbit" class="button-link button__primary button-link__bold" target="_blank"><!-- Molecula -->
+            CLAIM YOUR FREE TRIAL
+          </a>
+        </div>
+        <div class="form-login__terms">
+          <small>By clicking the button, you are agreeing to our 
+              <a href="" class="form-login__link-terms">Terms of Service</a>
+          </small>
+        </div>
+      </div>
+    </form>
+  </div>
+  <footer class="footer">
+    <p class="footer-attribution">
+      Challenge by <a class="footer-attribution__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a class="footer-attribution__link" href="https://twitter.com/shockiu" target="_blank">@shcokiu</a>.
+    </p>
+  </footer>
+  <script src="./js/index.js"></script>
+</body>
+</html>

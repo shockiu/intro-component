@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-image: url("../../images/bg-intro-desktop.png");
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+  background-color: #ff7a7a;
+  display: grid;
+  grid-template-rows: 1fr auto; }
+  @media (max-width: 520px) {
+    body {
+      background-image: url("../../images/bg-intro-mobile.png");
+      background-repeat: no-repeat; } }
+
+.button-link {
+  width: 100%;
+  text-decoration: none;
+  color: whitesmoke;
+  height: 35px;
+  padding-top: 16px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 8px 5px -3px #858585;
+  -moz-box-shadow: 0px 8px 5px -3px #858585;
+  box-shadow: 0px 8px 5px -3px #858585; }
+  @media (max-width: 375px) {
+    .button-link {
+      height: 60px; } }
+  @media (max-width: 520px) {
+    .button-link {
+      font-size: 15px; } }
+
+.button-link__bold {
+  font-weight: 600; }
+
+.button__primary {
+  background-color: #38cc8c; }
+
+.button__secondary {
+  background-color: #6055a5; }
+
+.icon-relative {
+  position: relative;
+  text-align: right;
+  top: -30px;
+  left: -5px;
+  color: #ff7a7a;
+  display: none; }
+
+.footer {
+  grid-row-start: 2;
+  grid-row-end: 3; }
+  @media (max-width: 1027px) {
+    .footer {
+      margin-top: 20rem; } }
+  @media (max-width: 375px) {
+    .footer {
+      margin-top: 25rem; } }
+
+.footer-attribution {
+  font-size: 11px;
+  text-align: center; }
+
+.footer-attribution__link {
+  color: #3e52a3; }
+
+.form-login {
+  min-width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  transition: all 1s; }
+  @media (max-width: 520px) {
+    .form-login {
+      min-width: 300px; } }
+
+.form-login__offer {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 50px; }
+  @media (max-width: 375px) {
+    .form-login__offer {
+      margin-top: 50px;
+      justify-content: center;
+      height: 70px; } }
+
+.form-login__group {
+  background-color: #fffbfb;
+  width: 92%;
+  padding: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 8px 5px -3px #858585;
+  -moz-box-shadow: 0px 8px 5px -3px #858585;
+  box-shadow: 0px 8px 5px -3px #858585; }
+
+.form-login__item {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%; }
+
+.form-login__input {
+  width: 94%;
+  height: 45px;
+  outline-color: #878282;
+  text-align: justify;
+  padding-left: 25px;
+  border-radius: 5px;
+  font-weight: 600;
+  border: 1px solid #c3c1c1; }
+  .form-login__input::placeholder {
+    padding-left: 5px;
+    font-weight: 600; }
+
+.form-login__warning {
+  border: 2px solid #ff7a7a; }
+
+.form-login__alert-message {
+  display: none;
+  margin-top: .25rem;
+  text-align: end;
+  font-style: italic;
+  font-size: 10px;
+  color: #ff7a7a;
+  font-weight: 500;
+  transition: all 1.2s; }
+
+.form-login__terms {
+  font-size: 14px;
+  font-weight: 500; }
+  @media (max-width: 375px) {
+    .form-login__terms {
+      font-size: 14px;
+      text-align: center; } }
+
+.form-login__link-terms {
+  color: #ff7a7a;
+  text-decoration: none;
+  font-weight: 600; }
+
+.login-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 450px; }
+
+.login-description__title {
+  color: #f0e9e9;
+  font-size: 42px;
+  /*USAR LA VARIABLE CON CALC()*/
+  font-weight: 700;
+  margin-bottom: 2rem; }
+  @media (max-width: 1027px) {
+    .login-description__title {
+      text-align: center; } }
+  @media (max-width: 520px) {
+    .login-description__title {
+      font-size: 28px; } }
+
+.login-description__description {
+  color: #f0e9e9;
+  font-weight: 500; }
+  @media (max-width: 1027px) {
+    .login-description__description {
+      text-align: center; } }
+  @media (max-width: 520px) {
+    .login-description__description {
+      font-size: 12px; } }
+
+.main-login {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 7.5rem 0;
+  height: 30rem;
+  margin: 0 4rem; }

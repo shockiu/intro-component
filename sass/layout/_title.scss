@@ -1,0 +1,31 @@
+.login-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 450px;
+}
+
+.login-description__title{
+    color: rgb(240, 233, 233);
+    font-size: 42px; /*USAR LA VARIABLE CON CALC()*/ 
+    font-weight: $font-popins-700-w;
+    margin-bottom: 2rem;
+    @include break('medium') {
+        text-align: center;
+    }
+    @include break('small') {
+        font-size: 28px;
+    }
+}
+
+.login-description__description {
+    color: rgb(240, 233, 233);
+    font-weight: $font-popins-500-w;
+    @include break('medium') {
+        text-align: center;
+    }
+    @include break('small') {
+        font-size: 12px;
+    }
+}

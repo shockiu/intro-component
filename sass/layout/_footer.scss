@@ -1,0 +1,17 @@
+.footer {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    @include break('medium') {
+        margin-top: 20rem;
+    }
+    @include break('x-small') {
+        margin-top: 25rem;
+    }
+}
+.footer-attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.footer-attribution__link{ 
+    color: hsl(228, 45%, 44%); 
+}

@@ -1,0 +1,95 @@
+.form-login {
+    min-width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    transition: all 1s;
+    @include break('small') {
+        min-width: 300px;
+    }
+}
+
+.form-login__offer {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    @include break('x-small') {
+        margin-top: 50px;
+        justify-content: center;
+        height: 70px;
+    }
+}
+
+.form-login__group {
+    background-color: rgb(255, 251, 251);
+    width: 92%;
+    padding: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 8px 5px -3px rgba(133,133,133,1);
+    -moz-box-shadow: 0px 8px 5px -3px rgba(133,133,133,1);
+    box-shadow: 0px 8px 5px -3px rgba(133,133,133,1);
+}
+
+.form-login__item{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-login__input {
+    width: 94%;
+    height: 45px;
+    outline-color: hsl(0, 2%, 52%);
+    text-align: justify;
+    padding-left: 25px;
+    border-radius: 5px;
+    font-weight: $font-popins-600-w;
+    border: 1px solid hsl(0, 2%, 76%);
+    &::placeholder {
+        padding-left: 5px;
+        font-weight: $font-popins-600-w;
+    }
+}
+
+.form-login__warning {
+    border: 2px solid $red;
+}
+
+.form-login__alert-message {
+    display: none;
+    margin-top: .25rem;
+    text-align: end;
+    font-style: italic;
+    font-size: 10px;
+    color: $red;
+    font-weight: $font-popins-500-w;
+    transition: all 1.2s;
+}
+
+.form-login__terms {
+    font-size: 14px;
+    font-weight: $font-popins-500-w;
+    @include break('x-small') {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+.form-login__link-terms {
+    color: $red;
+    text-decoration: none;
+    font-weight: $font-popins-600-w;
+}
